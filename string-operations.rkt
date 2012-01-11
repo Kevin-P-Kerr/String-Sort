@@ -28,31 +28,8 @@
   (let [(alist (string-to-numlist s))]
     (greatest-sort alist)))
 
+(define (string-least-sort s)
+  (let [(alist (string-to-numlist s))]
+    (least-sort alist)))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-(define x "1234 98")
-
-(string->number (manip-string x))
-(manip-string x)
-
-(manip-string "12324532")
-(substring x (string-length (manip-string x)))
-(define y (string-to-stringlist x))
-(car y)
-(cadr y)

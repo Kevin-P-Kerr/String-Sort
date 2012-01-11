@@ -65,5 +65,5 @@
               (in? n alist))]
       (filter in-helper blist))))
 
-(provide greatest-sort)
+(provide greatest-sort least-sort)
 
