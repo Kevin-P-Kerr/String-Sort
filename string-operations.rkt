@@ -20,16 +20,23 @@
                             (aux astring (+ n (+ b 1)))))))]
     (aux s 0)))
 
+(define (convert-list alist)
+(local [(define (convert-listelement-string n)
+  (string-append (number->string n)))]
+  (map convert-listelement-string alist)))
+
 (define (string-to-numlist s)
   (let [(alist (string-to-stringlist s))]
-    (map string->number alist)))
+     (map string->number alist)))
 
 (define (string-great-sort s)
   (let [(alist (string-to-numlist s))]
-    (greatest-sort alist)))
+    (convert-list (greatest-sort alist))))
 
 (define (string-least-sort s)
   (let [(alist (string-to-numlist s))]
-    (least-sort alist)))
+    (convert-list (least-sort alist))))
 
+
+(provide string-great-sort string-least-sort)
 
