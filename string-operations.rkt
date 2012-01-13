@@ -22,7 +22,7 @@
 
 (define (convert-list alist)
 (local [(define (convert-listelement-string n)
-  (string-append (number->string n)))]
+  (string-append (number->string n) (string #\space)))]
   (map convert-listelement-string alist)))
 
 (define (string-to-numlist s)
