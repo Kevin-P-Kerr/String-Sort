@@ -1,6 +1,3 @@
-This project will eventually be a small application that takes a string
-of numbers and returns a sorted list of numbers.
-
 The list-operations file defines two sorting functions--least-sort and 
 greatest-sort--that take a list and return sorted lists from least to 
 greatest and greatest to least-respectively. 
